@@ -1,7 +1,7 @@
-# ** What I Prefer in a Game **
+# **What I Prefer in a Game**
 ---
 I prefer story-driven games with a good narrative. They should also have their own mechanics and quirks that make them unique.
-## ** Games I'm Most Inspired By: **
+## **Games I'm Most Inspired By:**
 - [Baldur's Gate 3](https://baldursgate3.game/)
 - [The Elder Scrolls III: Morrowind](https://elderscrolls.bethesda.net/en/morrowind)
 - [Metal Gear Solid V: The Phantom Pain](https://www.konami.com/mg/mgsv/)
