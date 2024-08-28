@@ -5,3 +5,4 @@
 ## Links
 - https://www.rit.edu/
 - -[RIT] (https://www.rit.edu/)
+![Seal] (seal.jpg)
