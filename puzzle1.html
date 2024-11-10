@@ -6,16 +6,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-      function checkAnswer() {
-        let answer = "'" + document.querySelector("input").value + "'";
-        for (let node of document.querySelectorAll("td")) {
-          if (node.className.indexOf(answer) >= 0){
-            node.style = "color:white;";
-          }
-        }
-      }
-    </script>
     <style>
       body {
         background-image: url('https://github.com/guyfromhershey/IGME-110-Repo/blob/main/testimages/alienphone.gif?raw=true');
@@ -543,14 +533,20 @@
     </table>
     <h2>Across</h2>
     <p style="color:#ffffff;font-size:20px">1. What Mr. Gadget does in his eponymous animated TV show</p>
-    <form action="javascript:null">
+    <form onsubmit="submit1()" action="javascript:null">
       <input id="input1">
     </form>
     <script>
       function submit1() {
         var word = input1.value;
         if (word == "inspect") {
-          
+          a13_1.innerHTML = "I"
+          a13_2.innerHTML = "N"
+          a13_3.innerHTML = "S"
+          a13_4.innerHTML = "P"
+          a13_5.innerHTML = "E"
+          a13_6.innerHTML = "C"
+          a13_7.innerHTML = "t"
         }
       }
     </script>
