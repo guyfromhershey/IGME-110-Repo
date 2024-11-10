@@ -5,7 +5,7 @@
       body {
         background-image: url('https://github.com/guyfromhershey/IGME-110-Repo/blob/main/testimages/alienphone.gif?raw=true');
         background-repeat: no-repeat;
-        background-size: 375px 750px;
+        background-size: contain;
         background-position: center bottom;
         background-attachment: fixed;
         background-color: #000000
@@ -21,6 +21,10 @@
           font-family: Georgia;
           font-size: 20px;
         }
+      img {
+        width: 500px;
+        height: 500px;
+      }
       @media (orientation: landscape){
         body {
           background-image: url('https://github.com/guyfromhershey/IGME-110-Repo/blob/main/testimages/alien.gif?raw=true'),
@@ -42,6 +46,10 @@
           text-align: center;
           font-family: Lucida Console;
         }
+        img {
+          width: 375px;
+          height: 375px;
+        }
       }
     </style>
     <title>Where's Ritchie?</title>
@@ -51,7 +59,7 @@
     <p style="color:#ffffff;">If you wish to find Ritchie, you must head to:</p>
     <p style="color:#f76902;font-size:45px;">43.08438122131161,<br>-77.68473480150818</p>
     <div style="text-align: center;">
-      <img src=testimages/puzzle3.gif style="width:375px;height:375px;">
+      <img src=testimages/puzzle3.gif>
     </div>
   </body>
 </html>
