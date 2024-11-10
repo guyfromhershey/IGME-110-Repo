@@ -86,7 +86,7 @@
     <h1 style="color:#f76902;">Good work finding this QR code.</h1>
     <p style="color:#ffffff;">If you wish to find Ritchie,</p>
     <p style="color:#f76902;">SOLVE THIS!</p>
-    <img id="AlwaysHasBeen" src =
+    <img id="alwayshasbeen" src =
       https://github.com/guyfromhershey/IGME-110-Repo/blob/main/testimages/alwayshasbeen.png?raw=true
       style="display: none" align="center">
     <table align="center">
@@ -533,6 +533,55 @@
     <form onsubmit="submit1()" action="javascript:null">
       <input id="input1">
     </form>
+    <p style="color:#ffffff;font-size:20px">2. To look closely at something</p>
+    <form onsubmit="submit2()" action="javascript:null">
+      <input id="input2">
+    </form>
+    <p style="color:#ffffff;font-size:20px">3. What you do to solve this puzzle</p>
+    <form onsubmit="submit3a()" action="javascript:null">
+      <input id="input3a">
+    </form>
+    <p style="color:#ffffff;font-size:20px">4. You might use a magnifying glass to perform this task</p>
+    <form onsubmit="submit4a()" action="javascript:null">
+      <input id="input4a">
+    </form>
+    <p style="color:#ffffff;font-size:20px">5. What an OSHA agent does when they visit a workplace</p>
+    <form onsubmit="submit5a()" action="javascript:null">
+      <input id="input5a">
+    </form>
+    <p style="color:#ffffff;font-size:20px">8. Job of some in the NYPD</p>
+    <form onsubmit="submit8()" action="javascript:null">
+      <input id="input8">
+    </form>
+    <p style="color:#ffffff;font-size:20px">9. How many involved in Danny Ocean’s heist in his second film?<br>Or How many angry men in a 1957 jury?</p>
+    <form onsubmit="submit9()" action="javascript:null">
+      <input id="input9">
+    </form>
+    <h2>Down</h2>
+    <p style="color:#ffffff;font-size:20px">3. An option upon right-clicking a web page</p>
+    <form onsubmit="submit3d()" action="javascript:null">
+      <input id="input3d">
+    </form>
+    <p style="color:#ffffff;font-size:20px">4. Something you need to do to your car when you renew its registration</p>
+    <form onsubmit="submit4d()" action="javascript:null">
+      <input id="input4d">
+    </form>
+    <p style="color:#ffffff;font-size:20px">5. What the IRS does to your finances if something is suspicious</p>
+    <form onsubmit="submit5d()" action="javascript:null">
+      <input id="input5d">
+    </form>
+    <p style="color:#ffffff;font-size:20px">6. Taking a proper gander</p>
+    <form onsubmit="submit6()" action="javascript:null">
+      <input id="input6">
+    </form>
+    <p style="color:#ffffff;font-size:20px">7.  What one might call a social event,<br>or what other languages call a ‘method’</p>
+    <form onsubmit="submit7()" action="javascript:null">
+      <input id="input7">
+    </form>
+    <p style="color:#ffffff;font-size:20px">10. Hydrogen, oxygen, argon, for example</p>
+    <form onsubmit="submit10()" action="javascript:null">
+      <input id="input10">
+    </form>
     <script>
       var score1 = 0; var score2 = 0; var score3a = 0; var score3d = 0; var score4a = 0;
       var score4d = 0; var score5a = 0; var score5d = 0; var score6 = 0; var score7 = 0;
@@ -554,12 +603,6 @@
           }
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">2. To look closely at something</p>
-    <form onsubmit="submit2()" action="javascript:null">
-      <input id="input2">
-    </form>
-    <script>
       function submit2() {
         var word = input2.value;
         if (word == "inspect") {
@@ -573,12 +616,6 @@
           score2 = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">3. What you do to solve this puzzle</p>
-    <form onsubmit="submit3a()" action="javascript:null">
-      <input id="input3a">
-    </form>
-    <script>
       function submit3a() {
         var word = input3a.value;
         if (word == "inspect") {
@@ -592,12 +629,6 @@
           score3a = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">4. You might use a magnifying glass to perform this task</p>
-    <form onsubmit="submit4a()" action="javascript:null">
-      <input id="input4a">
-    </form>
-    <script>
       function submit4a() {
         var word = input4a.value;
         if (word == "inspect") {
@@ -611,12 +642,6 @@
           score4a = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">5. What an OSHA agent does when they visit a workplace</p>
-    <form onsubmit="submit5a()" action="javascript:null">
-      <input id="input5a">
-    </form>
-    <script>
       function submit5a() {
         var word = input5a.value;
         if (word == "inspect") {
@@ -630,12 +655,6 @@
           score5a = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">8. Job of some in the NYPD</p>
-    <form onsubmit="submit8()" action="javascript:null">
-      <input id="input8">
-    </form>
-    <script>
       function submit8() {
         var word = input8.value;
         if (word == "inspect") {
@@ -649,12 +668,6 @@
           score8 = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">9. How many involved in Danny Ocean’s heist in his second film?<br>Or How many angry men in a 1957 jury?</p>
-    <form onsubmit="submit9()" action="javascript:null">
-      <input id="input9">
-    </form>
-    <script>
       function submit9() {
         var word = input9.value;
         if (word == "twelve") {
@@ -667,13 +680,6 @@
           score9 = 1;
         }
       }
-    </script>
-    <h2>Down</h2>
-    <p style="color:#ffffff;font-size:20px">3. An option upon right-clicking a web page</p>
-    <form onsubmit="submit3d()" action="javascript:null">
-      <input id="input3d">
-    </form>
-    <script>
       function submit3d() {
         var word = input3d.value;
         if (word == "inspect") {
@@ -687,12 +693,6 @@
           score3d = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">4. Something you need to do to your car when you renew its registration</p>
-    <form onsubmit="submit4d()" action="javascript:null">
-      <input id="input4d">
-    </form>
-    <script>
       function submit4d() {
         var word = input4d.value;
         if (word == "inspect") {
@@ -706,12 +706,6 @@
           score4d = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">5. What the IRS does to your finances if something is suspicious</p>
-    <form onsubmit="submit5d()" action="javascript:null">
-      <input id="input5d">
-    </form>
-    <script>
       function submit5d() {
         var word = input5d.value;
         if (word == "inspect") {
@@ -725,12 +719,6 @@
           score5d = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">6. Taking a proper gander</p>
-    <form onsubmit="submit6()" action="javascript:null">
-      <input id="input6">
-    </form>
-    <script>
       function submit6() {
         var word = input6.value;
         if (word == "inspect") {
@@ -744,12 +732,6 @@
           score6 = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">7.  What one might call a social event,<br>or what other languages call a ‘method’</p>
-    <form onsubmit="submit7()" action="javascript:null">
-      <input id="input7">
-    </form>
-    <script>
       function submit7() {
         var word = input7.value;
         if (word == "function") {
@@ -764,12 +746,6 @@
           score7 = 1;
         }
       }
-    </script>
-    <p style="color:#ffffff;font-size:20px">10. Hydrogen, oxygen, argon, for example</p>
-    <form onsubmit="submit10()" action="javascript:null">
-      <input id="input10">
-    </form>
-    <script>
       function submit10() {
         var word = input10.value;
         if (word == "element") {
