@@ -6,6 +6,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      function checkAnswer() {
+        let answer = document.querySelector("input").value;
+        for (let node = document.querySelectorAll("td") {
+          if node.className.indexOf(answer) >= 0){
+            node.style = "color:white";
+          }
+        }
+      }
+    </script>
     <style>
       body {
         background-image: url('https://github.com/guyfromhershey/IGME-110-Repo/blob/main/testimages/alienphone.gif?raw=true');
@@ -39,7 +49,7 @@
           border: 5px solid white;
           width: 30px;
           height: 30px;
-          color: #ffffff;
+          color: black;
           text-align: center;
           background-color: black;
         }
@@ -105,7 +115,7 @@
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td><sup>7</sup>F</td> <!--15-->
+        <td class="function"><sup>7</sup>F</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -128,7 +138,7 @@
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td>U</td> <!--15-->
+        <td class="function">U</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -147,11 +157,11 @@
         <td></td> <!--8-->
         <td></td> <!--9-->
         <td></td> <!--10-->
-        <td><sup>6</sup>I</td> <!--11-->
+        <td class="inspect"><sup>6</sup>I</td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td>N</td> <!--15-->
+        <td class="function">N</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -170,11 +180,11 @@
         <td></td> <!--8-->
         <td></td> <!--9-->
         <td></td> <!--10-->
-        <td>N</td> <!--11-->
+        <td class="inspect">N</td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td>C</td> <!--15-->
+        <td class="function">C</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -191,13 +201,13 @@
         <td></td> <!--6-->
         <td></td> <!--7-->
         <td></td> <!--8-->
-        <td><sup>5</sup>I</td> <!--9-->
-        <td>N</td> <!--10-->
-        <td>S</td> <!--11-->
-        <td>P</td> <!--12-->
-        <td>E</td> <!--13-->
-        <td>C</td> <!--14-->
-        <td>T</td> <!--15-->
+        <td class="inspect"><sup>5</sup>I</td> <!--9-->
+        <td class="inspect">N</td> <!--10-->
+        <td class="inspect">S</td> <!--11-->
+        <td class="inspect">P</td> <!--12-->
+        <td class="inspect">E</td> <!--13-->
+        <td class="inspect">C</td> <!--14-->
+        <td class="inspect function">T</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -214,19 +224,19 @@
         <td></td> <!--6-->
         <td></td> <!--7-->
         <td></td> <!--8-->
-        <td>N</td> <!--9-->
+        <td class="inspect">N</td> <!--9-->
         <td></td> <!--10-->
-        <td>P</td> <!--11-->
+        <td class="inspect">P</td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td><sup>8</sup>I</td> <!--15-->
-        <td>N</td> <!--16-->
-        <td>S</td> <!--17-->
-        <td>P</td> <!--18-->
-        <td>E</td> <!--19-->
-        <td>C</td> <!--20-->
-        <td>T</td> <!--21-->
+        <td class="inspect function"><sup>8</sup>I</td> <!--15-->
+        <td class="inspect">N</td> <!--16-->
+        <td class="inspect">S</td> <!--17-->
+        <td class="inspect">P</td> <!--18-->
+        <td class="inspect">E</td> <!--19-->
+        <td class="inspect">C</td> <!--20-->
+        <td class="inspect">T</td> <!--21-->
       </tr>
       <tr> <!--7-->
         <td></td> <!--1-->
@@ -235,15 +245,15 @@
         <td></td> <!--4-->
         <td></td> <!--5-->
         <td></td> <!--6-->
-        <td><sup>4</sup>I</td> <!--7-->
-        <td>N</td> <!--8-->
-        <td>S</td> <!--9-->
-        <td>P</td> <!--10-->
-        <td>E</td> <!--11-->
-        <td>C</td> <!--12-->
-        <td>T</td> <!--13-->
+        <td class="inspect"><sup>4</sup>I</td> <!--7-->
+        <td class="inspect">N</td> <!--8-->
+        <td class="inspect">S</td> <!--9-->
+        <td class="inspect">P</td> <!--10-->
+        <td class="inspect">E</td> <!--11-->
+        <td class="inspect">C</td> <!--12-->
+        <td class="inspect">T</td> <!--13-->
         <td></td> <!--14-->
-        <td>O</td> <!--15-->
+        <td class="function">O</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -258,15 +268,15 @@
         <td></td> <!--4-->
         <td></td> <!--5-->
         <td></td> <!--6-->
-        <td>N</td> <!--7-->
+        <td class="inspect">N</td> <!--7-->
         <td></td> <!--8-->
-        <td>P</td> <!--9-->
+        <td class="inspect">P</td> <!--9-->
         <td></td> <!--10-->
-        <td>C</td> <!--11-->
+        <td class="inspect">C</td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td>N</td> <!--15-->
+        <td class="function">N</td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -279,13 +289,13 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td><sup>3</sup>I</td> <!--5-->
-        <td>N</td> <!--6-->
-        <td>S</td> <!--7-->
-        <td>P</td> <!--8-->
-        <td>E</td> <!--9-->
-        <td>C</td> <!--10-->
-        <td>T</td> <!--11-->
+        <td class="inspect"><sup>3</sup>I</td> <!--5-->
+        <td class="inspect">N</td> <!--6-->
+        <td class="inspect">S</td> <!--7-->
+        <td class="inspect">P</td> <!--8-->
+        <td class="inspect">E</td> <!--9-->
+        <td class="inspect">C</td> <!--10-->
+        <td class="inspect">T</td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
@@ -302,11 +312,11 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td>N</td> <!--5-->
+        <td class="inspect">N</td> <!--5-->
         <td></td> <!--6-->
-        <td>P</td> <!--7-->
+        <td class="inspect">P</td> <!--7-->
         <td></td> <!--8-->
-        <td>C</td> <!--9-->
+        <td class="inspect">C</td> <!--9-->
         <td></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
@@ -323,13 +333,13 @@
       <tr> <!--11-->
         <td></td> <!--1-->
         <td></td> <!--2-->
-        <td><sup>1</sup>I</td> <!--3-->
-        <td>N</td> <!--4-->
-        <td>S</td> <!--5-->
-        <td>P</td> <!--6-->
-        <td>E</td> <!--7-->
-        <td>C</td> <!--8-->
-        <td>T</td> <!--9-->
+        <td class="inspect"><sup>1</sup>I</td> <!--3-->
+        <td class="inspect">N</td> <!--4-->
+        <td class="inspect">S</td> <!--5-->
+        <td class="inspect">P</td> <!--6-->
+        <td class="inspect">E</td> <!--7-->
+        <td class="inspect">C</td> <!--8-->
+        <td class="inspect">T</td> <!--9-->
         <td></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
@@ -348,9 +358,9 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td>P</td> <!--5-->
+        <td class="inspect">P</td> <!--5-->
         <td></td> <!--6-->
-        <td>C</td> <!--7-->
+        <td class="inspect">C</td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
         <td></td> <!--10-->
@@ -367,16 +377,16 @@
         <td></td> <!--21-->
       </tr>
       <tr> <!--13-->
-        <td><sup>1</sup>I</td> <!--1-->
-        <td>N</td> <!--2-->
-        <td>S</td> <!--3-->
-        <td>P</td> <!--4-->
-        <td>E</td> <!--5-->
-        <td>C</td> <!--6-->
-        <td>T</td> <!--7-->
+        <td class="inspect"><sup>1</sup>I</td> <!--1-->
+        <td class="inspect">N</td> <!--2-->
+        <td class="inspect">S</td> <!--3-->
+        <td class="inspect">P</td> <!--4-->
+        <td class="inspect">E</td> <!--5-->
+        <td class="inspect">C</td> <!--6-->
+        <td class="inspect">T</td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td><sup>10</sup>E</td> <!--10-->
+        <td class="element"><sup>10</sup>E</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -394,12 +404,12 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td>C</td> <!--5-->
+        <td class="inspect">C</td> <!--5-->
         <td></td> <!--6-->
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td>L</td> <!--10-->
+        <td class="element">L</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -417,12 +427,12 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td><sup>9</sup>T</td> <!--5-->
-        <td>W</td> <!--6-->
-        <td>E</td> <!--7-->
-        <td>L</td> <!--8-->
-        <td>V</td> <!--9-->
-        <td>E</td> <!--10-->
+        <td class="twelve"><sup>9</sup>T</td> <!--5-->
+        <td class="twelve">W</td> <!--6-->
+        <td class="twelve">E</td> <!--7-->
+        <td class="twelve">L</td> <!--8-->
+        <td class="twelve">V</td> <!--9-->
+        <td class="twelve element">E</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -445,7 +455,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td>M</td> <!--10-->
+        <td class="element">M</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -468,7 +478,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td>E</td> <!--10-->
+        <td class="element">E</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -491,7 +501,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td>N</td> <!--10-->
+        <td class="element">N</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -514,7 +524,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td>T</td> <!--10-->
+        <td class="element">T</td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -531,7 +541,7 @@
     <h2>Across</h2>
     <p style="color:#ffffff;font-size:20px">1. What Mr. Gadget does in his eponymous animated TV show</p>
     <form>
-      <input>
+      <input align="middle">
     </form>
     <p style="color:#ffffff;font-size:20px">2. To look closely at something</p>
     <p style="color:#ffffff;font-size:20px">3. What you do to solve this puzzle</p>
