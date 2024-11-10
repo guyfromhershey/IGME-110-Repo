@@ -36,16 +36,18 @@
         border-collapse: collapse;
       }
       td {
+          width: 30px;
+          height: 30px;
+          border: none;
+          background-color: transparent;
+        }
+      .box {
           border: 5px solid white;
           width: 30px;
           height: 30px;
           color: black;
           text-align: center;
           background-color: black;
-        }
-      td:empty {
-          border: none;
-          background-color: transparent;
         }
       sup{
           color: #ffffff;
@@ -79,11 +81,6 @@
           text-align: center;
           font-family: Lucida Console;
         }
-        td{
-          border: 5px solid white;
-          width: 30px;
-          height: 30px
-        }
       }
     </style>
     <title>Where's Ritchie?</title>
@@ -108,7 +105,7 @@
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a1_15"><sup>7</sup>F</td> <!--15-->
+        <td id="a1_15" class="box"><sup>7</sup></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -131,7 +128,7 @@
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a2_15">U</td> <!--15-->
+        <td id="a2_15" class="box"></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -150,11 +147,11 @@
         <td></td> <!--8-->
         <td></td> <!--9-->
         <td></td> <!--10-->
-        <td id="a3_11"><sup>6</sup>I</td> <!--11-->
+        <td id="a3_11" class="box"><sup>6</sup></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a3_15">N</td> <!--15-->
+        <td id="a3_15" class="box"></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -173,11 +170,11 @@
         <td></td> <!--8-->
         <td></td> <!--9-->
         <td></td> <!--10-->
-        <td id="a4_11">N</td> <!--11-->
+        <td id="a4_11" class="box"></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a4_15">C</td> <!--15-->
+        <td id="a4_15" class="box"></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -194,13 +191,13 @@
         <td></td> <!--6-->
         <td></td> <!--7-->
         <td></td> <!--8-->
-        <td id="a5_9"><sup>5</sup>I</td> <!--9-->
-        <td id="a5_10">N</td> <!--10-->
-        <td id="a5_11">S</td> <!--11-->
-        <td id="a5_12">P</td> <!--12-->
-        <td id="a5_13">E</td> <!--13-->
-        <td id="a5_14">C</td> <!--14-->
-        <td id="a5_15">T</td> <!--15-->
+        <td id="a5_9" class="box"><sup>5</sup></td> <!--9-->
+        <td id="a5_10" class="box"></td> <!--10-->
+        <td id="a5_11" class="box"></td> <!--11-->
+        <td id="a5_12" class="box"></td> <!--12-->
+        <td id="a5_13" class="box"></td> <!--13-->
+        <td id="a5_14" class="box"></td> <!--14-->
+        <td id="a5_15" class="box"></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -217,19 +214,19 @@
         <td></td> <!--6-->
         <td></td> <!--7-->
         <td></td> <!--8-->
-        <td id="a6_9">N</td> <!--9-->
+        <td id="a6_9" class="box"></td> <!--9-->
         <td></td> <!--10-->
-        <td id="a6_11">P</td> <!--11-->
+        <td id="a6_11" class="box"></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a6_15"><sup>8</sup>I</td> <!--15-->
-        <td id="a6_16">N</td> <!--16-->
-        <td id="a6_17">S</td> <!--17-->
-        <td id="a6_18">P</td> <!--18-->
-        <td id="a6_19">E</td> <!--19-->
-        <td id="a6_20">C</td> <!--20-->
-        <td id="a6_21">T</td> <!--21-->
+        <td id="a6_15" class="box"><sup>8</sup></td> <!--15-->
+        <td id="a6_16" class="box"></td> <!--16-->
+        <td id="a6_17" class="box"></td> <!--17-->
+        <td id="a6_18" class="box"></td> <!--18-->
+        <td id="a6_19" class="box"></td> <!--19-->
+        <td id="a6_20" class="box"></td> <!--20-->
+        <td id="a6_21" class="box"></td> <!--21-->
       </tr>
       <tr> <!--7-->
         <td></td> <!--1-->
@@ -238,15 +235,15 @@
         <td></td> <!--4-->
         <td></td> <!--5-->
         <td></td> <!--6-->
-        <td id="a7_7"><sup>4</sup>I</td> <!--7-->
-        <td id="a7_8">N</td> <!--8-->
-        <td id="a7_9">S</td> <!--9-->
-        <td id="a7_10">P</td> <!--10-->
-        <td id="a7_11">E</td> <!--11-->
-        <td id="a7_12">C</td> <!--12-->
-        <td id="a7_13">T</td> <!--13-->
+        <td id="a7_7" class="box"><sup>4</sup></td> <!--7-->
+        <td id="a7_8" class="box"></td> <!--8-->
+        <td id="a7_9" class="box"></td> <!--9-->
+        <td id="a7_10" class="box"></td> <!--10-->
+        <td id="a7_11" class="box"></td> <!--11-->
+        <td id="a7_12" class="box"></td> <!--12-->
+        <td id="a7_13" class="box"></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a7_15">O</td> <!--15-->
+        <td id="a7_15" class="box"></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -261,15 +258,15 @@
         <td></td> <!--4-->
         <td></td> <!--5-->
         <td></td> <!--6-->
-        <td id="a8_7">N</td> <!--7-->
+        <td id="a8_7" class="box"></td> <!--7-->
         <td></td> <!--8-->
-        <td id="a8_9">P</td> <!--9-->
+        <td id="a8_9" class="box"></td> <!--9-->
         <td></td> <!--10-->
-        <td id="a8_10">C</td> <!--11-->
+        <td id="a8_10" class="box"></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
-        <td id="a8_15">N</td> <!--15-->
+        <td id="a8_15" class="box"></td> <!--15-->
         <td></td> <!--16-->
         <td></td> <!--17-->
         <td></td> <!--18-->
@@ -282,13 +279,13 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td id="a9_5"><sup>3</sup>I</td> <!--5-->
-        <td id="a9_6">N</td> <!--6-->
-        <td id="a9_7">S</td> <!--7-->
-        <td id="a9_8">P</td> <!--8-->
-        <td id="a9_9">E</td> <!--9-->
-        <td id="a9_10">C</td> <!--10-->
-        <td id="a9_11">T</td> <!--11-->
+        <td id="a9_5" class="box"><sup>3</sup></td> <!--5-->
+        <td id="a9_6" class="box"></td> <!--6-->
+        <td id="a9_7" class="box"></td> <!--7-->
+        <td id="a9_8" class="box"></td> <!--8-->
+        <td id="a9_9" class="box"></td> <!--9-->
+        <td id="a9_10" class="box"></td> <!--10-->
+        <td id="a9_11" class="box"></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
@@ -305,11 +302,11 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td id="a10_5">N</td> <!--5-->
+        <td id="a10_5" class="box"></td> <!--5-->
         <td></td> <!--6-->
-        <td id="a10_7">P</td> <!--7-->
+        <td id="a10_7" class="box"></td> <!--7-->
         <td></td> <!--8-->
-        <td id="a10_9">C</td> <!--9-->
+        <td id="a10_9" class="box"></td> <!--9-->
         <td></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
@@ -326,13 +323,13 @@
       <tr> <!--11-->
         <td></td> <!--1-->
         <td></td> <!--2-->
-        <td id="a11_3"><sup>2</sup>I</td> <!--3-->
-        <td id="a11_4">N</td> <!--4-->
-        <td id="a11_5">S</td> <!--5-->
-        <td id="a11_6">P</td> <!--6-->
-        <td id="a11_7">E</td> <!--7-->
-        <td id="a11_8">C</td> <!--8-->
-        <td id="a11_9">T</td> <!--9-->
+        <td id="a11_3" class="box"><sup>2</sup></td> <!--3-->
+        <td id="a11_4" class="box"></td> <!--4-->
+        <td id="a11_5" class="box"></td> <!--5-->
+        <td id="a11_6" class="box"></td> <!--6-->
+        <td id="a11_7" class="box"></td> <!--7-->
+        <td id="a11_8" class="box"></td> <!--8-->
+        <td id="a11_9" class="box"></td> <!--9-->
         <td></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
@@ -351,9 +348,9 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td id="a12_5">P</td> <!--5-->
+        <td id="a12_5" class="box"></td> <!--5-->
         <td></td> <!--6-->
-        <td id="a12_7">C</td> <!--7-->
+        <td id="a12_7" class="box"></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
         <td></td> <!--10-->
@@ -370,16 +367,16 @@
         <td></td> <!--21-->
       </tr>
       <tr> <!--13-->
-        <td id="a13_1"><sup>1</sup>I</td> <!--1-->
-        <td id="a13_2">N</td> <!--2-->
-        <td id="a13_3">S</td> <!--3-->
-        <td id="a13_4">P</td> <!--4-->
-        <td id="a13_5">E</td> <!--5-->
-        <td id="a13_6">C</td> <!--6-->
-        <td id="a13_7">T</td> <!--7-->
+        <td id="a13_1" class="box"><sup>1</sup></td> <!--1-->
+        <td id="a13_2" class="box"></td> <!--2-->
+        <td id="a13_3" class="box"></td> <!--3-->
+        <td id="a13_4" class="box"></td> <!--4-->
+        <td id="a13_5" class="box"></td> <!--5-->
+        <td id="a13_6" class="box"></td> <!--6-->
+        <td id="a13_7" class="box"></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td id="a13_10"><sup>10</sup>E</td> <!--10-->
+        <td id="a13_10" class="box"><sup>10</sup></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -397,12 +394,12 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td id="a14_5">C</td> <!--5-->
+        <td id="a14_5" class="box"></td> <!--5-->
         <td></td> <!--6-->
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td id="a14_10">L</td> <!--10-->
+        <td id="a14_10" class="box"></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -420,12 +417,12 @@
         <td></td> <!--2-->
         <td></td> <!--3-->
         <td></td> <!--4-->
-        <td id="a15_5"><sup>9</sup>T</td> <!--5-->
-        <td id="a15_6">W</td> <!--6-->
-        <td id="a15_7">E</td> <!--7-->
-        <td id="a15_8">L</td> <!--8-->
-        <td id="a15_9">V</td> <!--9-->
-        <td id="a15_10">E</td> <!--10-->
+        <td id="a15_5" class="box"><sup>9</sup></td> <!--5-->
+        <td id="a15_6" class="box"></td> <!--6-->
+        <td id="a15_7" class="box"></td> <!--7-->
+        <td id="a15_8" class="box"></td> <!--8-->
+        <td id="a15_9" class="box"></td> <!--9-->
+        <td id="a15_10" class="box"></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -448,7 +445,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td id="a16_10">M</td> <!--10-->
+        <td id="a16_10" class="box"></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -471,7 +468,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td id="a17_10">E</td> <!--10-->
+        <td id="a17_10" class="box"></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -494,7 +491,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td id="a18_10">N</td> <!--10-->
+        <td id="a18_10" class="box"></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
@@ -517,7 +514,7 @@
         <td></td> <!--7-->
         <td></td> <!--8-->
         <td></td> <!--9-->
-        <td id="a19_10">T</td> <!--10-->
+        <td id="a19_10" class="box"></td> <!--10-->
         <td></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
