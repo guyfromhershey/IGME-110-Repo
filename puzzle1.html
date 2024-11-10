@@ -9,7 +9,7 @@
     <script>
       function checkAnswer() {
         let answer = document.querySelector("input").value;
-        for (let node = document.querySelectorAll("td") {
+        for (let node of document.querySelectorAll("td")) {
           if (node.className.indexOf(answer) >= 0){
             node.style = "color:white;";
           }
