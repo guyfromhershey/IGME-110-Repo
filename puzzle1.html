@@ -262,7 +262,7 @@
         <td></td> <!--8-->
         <td id="a8_9" class="box"></td> <!--9-->
         <td></td> <!--10-->
-        <td id="a8_10" class="box"></td> <!--11-->
+        <td id="a8_11" class="box"></td> <!--11-->
         <td></td> <!--12-->
         <td></td> <!--13-->
         <td></td> <!--14-->
@@ -586,7 +586,13 @@
       var score1 = 0; var score2 = 0; var score3a = 0; var score3d = 0; var score4a = 0;
       var score4d = 0; var score5a = 0; var score5d = 0; var score6 = 0; var score7 = 0;
       var score8 = 0; var score9 = 0; var score10 = 0;
-      var AHB = document.getElementByID("alwayshasbeen");
+      const AHB = document.getElementById("alwayshasbeen");
+      function showImage() {
+        if (score1 + score2 + score3a + score3d + score4a + score4d + score5a +
+           score5d + score6 + score7 + score8 + score9 + score10 == 13) {
+            AHB.style.display = "block";
+        }
+      }
       function submit1() {
         var word = input1.value;
         if (word == "inspect") {
@@ -598,10 +604,7 @@
           a13_6.innerHTML = "C";
           a13_7.innerHTML = "T";
           score1 = 1;
-          if (score1 + score2 + score3a + score3d + score4a + score4d + score5a +
-           score5d + score6 + score7 + score8 + score9 + score10 == 13){
-            AHB.style.display = "block";
-          }
+          showImage()
         }
       }
       function submit2() {
@@ -615,6 +618,7 @@
           a11_8.innerHTML = "C";
           a11_9.innerHTML = "T";
           score2 = 1;
+          showImage()
         }
       }
       function submit3a() {
@@ -628,6 +632,7 @@
           a9_10.innerHTML = "C";
           a9_11.innerHTML = "T";
           score3a = 1;
+          showImage()
         }
       }
       function submit4a() {
@@ -641,6 +646,7 @@
           a7_12.innerHTML = "C";
           a7_13.innerHTML = "T";
           score4a = 1;
+          showImage()
         }
       }
       function submit5a() {
@@ -654,6 +660,7 @@
           a5_14.innerHTML = "C";
           a5_15.innerHTML = "T";
           score5a = 1;
+          showImage()
         }
       }
       function submit8() {
@@ -667,6 +674,7 @@
           a6_20.innerHTML = "C";
           a6_21.innerHTML = "T";
           score8 = 1;
+          showImage()
         }
       }
       function submit9() {
@@ -679,6 +687,7 @@
           a15_9.innerHTML = "V";
           a15_10.innerHTML = "E";
           score9 = 1;
+          showImage()
         }
       }
       function submit3d() {
@@ -692,6 +701,7 @@
           a14_5.innerHTML = "C";
           a15_5.innerHTML = "T";
           score3d = 1;
+          showImage()
         }
       }
       function submit4d() {
@@ -705,6 +715,7 @@
           a12_7.innerHTML = "C";
           a13_7.innerHTML = "T";
           score4d = 1;
+          showImage()
         }
       }
       function submit5d() {
@@ -718,6 +729,7 @@
           a10_9.innerHTML = "C";
           a11_9.innerHTML = "T";
           score5d = 1;
+          showImage()
         }
       }
       function submit6() {
@@ -731,6 +743,7 @@
           a8_11.innerHTML = "C";
           a9_11.innerHTML = "T";
           score6 = 1;
+          showImage()
         }
       }
       function submit7() {
@@ -758,6 +771,7 @@
           a18_10.innerHTML = "N";
           a19_10.innerHTML = "T";
           score10 = 1;
+          showImage()
         }
       }
     </script>
